@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="meteo.css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Meteo App</title>
   </head>
   <body>
@@ -30,16 +30,16 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city" id="city"></h1>
-            <p class="weather-app-details">
-              Tuesday 14:49, scattered clouds
+            <h1 class="weather-app-city" id="city">Paris</h1>
+            <p class="weather-app-details"><span id="current-date">
+              Tuesday 14:49</span>, scattered clouds
               <br />
               Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
             </p>
           </div>
           <div class="weather-app-temperature-container">
             <div class="weather-app-icon">🌤️</div>
-            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-temperature" id="temperature">14</div>
             <div class="weatehr-app-unit">°C</div>
           </div>
         </div>
@@ -47,9 +47,9 @@
 
       <footer>
         This project was coded by
-        <a href="https://github.com/matthieua/" target="_blank"> Felicia Lekota</a>,
+        <a href="https://github.com/FeliciaLekota" target="_blank"> Felicia Lekota</a>,
         is
-        <a href="https://github.com/matthieua/meteo" target="_blank"
+        <a href="https://github.com/FeliciaLekota/meteo-app " target="_blank"
           >open-sourced on GitHub</a
         >
         and
