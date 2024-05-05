@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="meteo.css" />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Meteo App</title>
   </head>
   <body>
@@ -30,17 +30,19 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city" id="city">Paris</h1>
+            <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details"><span id="current-date">
-              Tuesday 14:49</span>, scattered clouds
+              Tuesday 14:49</span>, <span id="description" ><span>
+             
               <br />
-              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+              Humidity: <span id="humidity"><strong >66%</strong></span>, Wind: <strong id="wind">3.13km/h</strong>
             </p>
           </div>
           <div class="weather-app-temperature-container">
+            <div id = icon></div>
             <div class="weather-app-icon">🌤️</div>
             <div class="weather-app-temperature" id="temperature">14</div>
-            <div class="weatehr-app-unit">°C</div>
+            <div class="weather-app-unit">°C</div>
           </div>
         </div>
       </main>
